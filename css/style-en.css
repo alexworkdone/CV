@@ -110,10 +110,6 @@ ul {
     padding: 0 0 0 190px;
 }
 
-.list-technologies {
-    margin-bottom: 8px;
-}
-
 .col_right .list-inline {
     padding-left: 0;
 }
@@ -151,20 +147,12 @@ ul {
     width: 185px;
 }
 
-[lang=ru] .list-technologies::before {
+.list-technologies::before {
     content: 'Используемые технологии:';
 }
 
-[lang=ru] .product-company::before {
+.product-company::before {
     content: 'Продукт компании:';
-}
-
-[lang=en] .list-technologies::before {
-    content: 'Technologies:';
-}
-
-[lang=en] .product-company::before {
-    content: 'Company product:';
 }
 
 /* scrollbar */
@@ -276,18 +264,6 @@ border-radius: 4px;
 }
 
 /* main grid */
-.link-lang {
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    padding: 8px;
-    background-color: #808080;
-    border-radius: 4px;
-    font-weight: 700;
-    text-decoration: none;
-    z-index: 4;
-}
-
 .col_left,
 .col_right {
     padding: 16px;
@@ -648,57 +624,28 @@ h1 {
     font-weight: 400;
 }
 
+.col_right .courses::before {
+    content: 'Курсы:';
+}
+
 .col_right .date::before {
     content: ' ';
 }
 
-[lang=ru] .col_right .courses::before {
-    content: 'Курсы:';
-}
-
-[lang=ru] .col_right .info::before {
+.col_right .info::before {
     content: 'Тема:';
 }
 
-[lang=ru] .col_right .company::before {
+.col_right .company::before {
     content: 'Компания:';
 }
 
-[lang=ru] .col_right .position::before {
+.col_right .position::before {
     content: 'Должность:';
 }
 
-[lang=ru] .col_right .institution::before {
+.col_right .institution::before {
     content: 'ВУЗ:';
-}
-
-[lang=en] .col_right .courses::before {
-    content: 'Courses:';
-}
-
-[lang=en] .col_right .info::before {
-    content: 'Theme:';
-}
-
-[lang=en] .col_right .company::before {
-    content: 'Company:';
-}
-
-[lang=en] .col_right .position::before {
-    content: 'Position:';
-}
-
-[lang=en] .col_right .institution::before {
-    content: 'University:';
-}
-
-.col_right .company a {
-    color: #0b090c;
-    text-decoration: none;
-}
-
-.col_right .company a:hover::after {
-    color: #000;
 }
 
 .col_right .company a {
@@ -713,7 +660,6 @@ h1 {
 .col_right .company a::after {
     content: '\e904';
     margin-left: 6px;
-    margin-right: 6px;
     font-family: 'icomoon' !important;
     color: #777;
     font-size: 11px;
