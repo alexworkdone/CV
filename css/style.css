@@ -305,7 +305,7 @@ border-radius: 4px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 300px;
             flex: 0 0 300px;
-    background-color: rgb(100 100 100);
+    background-color: rgb(100, 100, 100);
     color: #fff;
     text-align: center;
 }
@@ -450,8 +450,8 @@ body {
     width: 100%;
     max-width: 300px;
     border-radius: 16px;
-    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
-            box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    -webkit-box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -586,12 +586,12 @@ h1 {
     margin: 0 2px;
     width: 12px;
     height: 12px;
-    border: 1px solid rgb(255 255 255 / 30%);
+    border: 1px solid rgb(255, 255, 255, 0.3);
     border-radius: 50px;
 }
 
 .status-lang .ok {
-    background-color: rgb(255 255 255 / 30%);
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 /* col right */
