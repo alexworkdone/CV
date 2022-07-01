@@ -1,0 +1,141 @@
+{
+  "name": "vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "sass-loader": "^13.0.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-plugin-vuex": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.2.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-console": "off",
+      "require-atomic-updates": "off",
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1,
+          "VariableDeclarator": 1,
+          "outerIIFEBody": 1,
+          "MemberExpression": 1,
+          "FunctionDeclaration": {
+            "parameters": 1,
+            "body": 1
+          },
+          "FunctionExpression": {
+            "parameters": 1,
+            "body": 1
+          },
+          "CallExpression": {
+            "arguments": 1
+          },
+          "ArrayExpression": 1,
+          "ObjectExpression": 1,
+          "ImportDeclaration": 1,
+          "flatTernaryExpressions": false,
+          "ignoreComments": false
+        }
+      ],
+      "vue/multi-word-component-names": "off",
+      "vue/prop-name-casing": "error",
+      "vue/max-attributes-per-line": "off",
+      "vue/multiline-html-element-content-newline": "off",
+      "vue/singleline-html-element-content-newline": "off",
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
+      "arrow-spacing": [
+        2,
+        {
+          "before": true,
+          "after": true
+        }
+      ],
+      "no-class-assign": "error",
+      "no-confusing-arrow": "error",
+      "no-const-assign": "error",
+      "no-dupe-class-members": "error",
+      "object-shorthand": [
+        2,
+        "always"
+      ],
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
+      "prefer-numeric-literals": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+      "vue/html-closing-bracket-spacing": "error",
+      "vue/html-indent": "off",
+      "vue/html-self-closing": "off",
+      "vue/component-name-in-template-casing": "off",
+      "vue/order-in-components": 1,
+      "vue/v-bind-style": "off",
+      "vue/require-prop-types": "off",
+      "vue/no-v-html": "off",
+      "prettier/prettier": [
+        "warn",
+        {
+          "htmlWhitespaceSensitivity": "ignore",
+          "printWidth": 120,
+          "singleQuote": true,
+          "semi": true,
+          "arrowParens": "always",
+          "quoteProps": "preserve",
+          "trailingComma": "es5",
+          "endOfLine": "auto",
+          "usePrettierrc": false
+        }
+      ]
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "prettier": {
+    "htmlWhitespaceSensitivity": "ignore",
+    "printWidth": 120,
+    "singleQuote": true,
+    "semi": true,
+    "arrowParens": "always",
+    "quoteProps": "preserve",
+    "trailingComma": "es5",
+    "endOfLine": "auto"
+  }
+}

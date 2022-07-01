@@ -63,6 +63,10 @@ body {
         flex-basis: 100%;
 }
 
+.full-height {
+    min-height: 100vh;
+}
+
 .text-center {
     text-align: center;
 }
@@ -110,6 +114,10 @@ ul {
     padding: 0 0 0 190px;
 }
 
+.list-technologies {
+    margin-bottom: 8px;
+}
+
 .col_right .list-inline {
     padding-left: 0;
 }
@@ -147,12 +155,20 @@ ul {
     width: 185px;
 }
 
-.list-technologies::before {
+[lang=ru] .list-technologies::before {
     content: 'Используемые технологии:';
 }
 
-.product-company::before {
+[lang=ru] .product-company::before {
     content: 'Продукт компании:';
+}
+
+[lang=en] .list-technologies::before {
+    content: 'Technologies:';
+}
+
+[lang=en] .product-company::before {
+    content: 'Company product:';
 }
 
 /* scrollbar */
@@ -264,6 +280,18 @@ border-radius: 4px;
 }
 
 /* main grid */
+.link-lang {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    padding: 8px;
+    background-color: #808080;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 4;
+}
+
 .col_left,
 .col_right {
     padding: 16px;
@@ -281,7 +309,7 @@ border-radius: 4px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 300px;
             flex: 0 0 300px;
-    background-color: rgb(100 100 100);
+    background-color: rgb(100, 100, 100);
     color: #fff;
     text-align: center;
 }
@@ -426,8 +454,8 @@ body {
     width: 100%;
     max-width: 300px;
     border-radius: 16px;
-    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
-            box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    -webkit-box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -562,12 +590,12 @@ h1 {
     margin: 0 2px;
     width: 12px;
     height: 12px;
-    border: 1px solid rgb(255 255 255 / 30%);
+    border: 1px solid rgb(255, 255, 255, 0.3);
     border-radius: 50px;
 }
 
 .status-lang .ok {
-    background-color: rgb(255 255 255 / 30%);
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 /* col right */
@@ -624,28 +652,57 @@ h1 {
     font-weight: 400;
 }
 
-.col_right .courses::before {
-    content: 'Курсы:';
-}
-
 .col_right .date::before {
     content: ' ';
 }
 
-.col_right .info::before {
+[lang=ru] .col_right .courses::before {
+    content: 'Курсы:';
+}
+
+[lang=ru] .col_right .info::before {
     content: 'Тема:';
 }
 
-.col_right .company::before {
+[lang=ru] .col_right .company::before {
     content: 'Компания:';
 }
 
-.col_right .position::before {
+[lang=ru] .col_right .position::before {
     content: 'Должность:';
 }
 
-.col_right .institution::before {
+[lang=ru] .col_right .institution::before {
     content: 'ВУЗ:';
+}
+
+[lang=en] .col_right .courses::before {
+    content: 'Courses:';
+}
+
+[lang=en] .col_right .info::before {
+    content: 'Theme:';
+}
+
+[lang=en] .col_right .company::before {
+    content: 'Company:';
+}
+
+[lang=en] .col_right .position::before {
+    content: 'Position:';
+}
+
+[lang=en] .col_right .institution::before {
+    content: 'University:';
+}
+
+.col_right .company a {
+    color: #0b090c;
+    text-decoration: none;
+}
+
+.col_right .company a:hover::after {
+    color: #000;
 }
 
 .col_right .company a {
@@ -660,6 +717,7 @@ h1 {
 .col_right .company a::after {
     content: '\e904';
     margin-left: 6px;
+    margin-right: 6px;
     font-family: 'icomoon' !important;
     color: #777;
     font-size: 11px;
