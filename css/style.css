@@ -426,7 +426,7 @@ body {
 .foto {
     position: relative;
     margin: -16px -16px 0;
-    padding: 32px 32px 16px;
+    padding: 20px 16px 16px;
     overflow: hidden;
 }
 
@@ -437,7 +437,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../images/alex.jpg) no-repeat;
+    background: url(../images/alex_2.jpg) no-repeat center;
     background-size: cover;
     -webkit-filter: blur(7px);
             filter: blur(7px);
@@ -447,8 +447,9 @@ body {
 .foto img {
     position: relative;
     height: 100%;
-    width: 100%;
-    max-width: 300px;
+    max-height: 330px;
+    /* width: 100%;
+    max-width: 300px; */
     border-radius: 16px;
     -webkit-box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
             box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
