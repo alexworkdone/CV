@@ -159,6 +159,14 @@ ul {
     content: 'Продукт компании:';
 }
 
+[lang=ua] .list-technologies::before {
+    content: 'Використані технології:';
+}
+
+[lang=ua] .product-company::before {
+    content: 'Продукт компанії:';
+}
+
 [lang=en] .list-technologies::before {
     content: 'Technologies:';
 }
@@ -670,6 +678,26 @@ h1 {
 }
 
 [lang=ru] .col_right .institution::before {
+    content: 'ВУЗ:';
+}
+
+[lang=ua] .col_right .courses::before {
+    content: 'Курси:';
+}
+
+[lang=ua] .col_right .info::before {
+    content: 'Тема:';
+}
+
+[lang=ua] .col_right .company::before {
+    content: 'Компанія:';
+}
+
+[lang=ua] .col_right .position::before {
+    content: 'Посада:';
+}
+
+[lang=ua] .col_right .institution::before {
     content: 'ВУЗ:';
 }
 
